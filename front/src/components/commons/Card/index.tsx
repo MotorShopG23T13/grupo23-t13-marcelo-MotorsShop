@@ -23,6 +23,7 @@ interface CardProps {
     url: string;
     alt: string;
   };
+  
   text: string;
   mileage: string;
   year: string;
