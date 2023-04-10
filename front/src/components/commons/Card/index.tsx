@@ -82,6 +82,9 @@ export function CardCars({status}:any) {
     width="350px"
     height="178.96px"
   />
+  <Flex>
+    
+  </Flex>
   <CardBody>
     <Box mt="-3" mb="2">
       <Text
@@ -103,14 +106,14 @@ export function CardCars({status}:any) {
         João Silva
       </Text>
     </Stack>
-    <Flex alignItems="center" justifyContent="space-between" marginTop={3}>
+    <Flex display="flex" alignItems="center"gap={10} justifyContent="normal" marginTop={3}>
       <Box backgroundColor="#EDEAFD" p="1" borderRadius="md">
         <Text fontWeight="bold" color={" #4529E6"} fontSize="sm">
           30.000 km
         </Text>
       </Box>
       <Box backgroundColor="#EDEAFD" p="1" borderRadius="md">
-        <Text fontWeight="bold" color={" #4529E6"} fontSize="sm">
+        <Text fontWeight="bold" color={"#4529E6"} fontSize="sm">
           2020
         </Text>
       </Box>

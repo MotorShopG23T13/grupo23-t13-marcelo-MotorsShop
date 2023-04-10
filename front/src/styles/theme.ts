@@ -23,9 +23,6 @@ const MotorTheme = extendTheme({
   },
 
 
-    heading: "Lexend, serif",
-  },
-
   colors: {
     // Brand
     brand1: "#4529E6",
@@ -107,10 +104,6 @@ const MotorTheme = extendTheme({
     "lg": "18px",
     "md": "16px",
 
-    xl: "20px",
-    lg: "18px",
-    md: "16px",
-
   },
   fontWeights: {
     light: 300,
@@ -122,7 +115,7 @@ const MotorTheme = extendTheme({
 
 })
 
-  components: {
+ const components= {
     Button: {
       variants: {
         "outline-1": {
@@ -148,8 +141,7 @@ const MotorTheme = extendTheme({
         "gray-1": {
           bg: "gray.300",
           color: "gray.700",
-         
-         
+
           _hover: {
             bg: "gray.400",
             color: "gray.700",
@@ -163,8 +155,7 @@ const MotorTheme = extendTheme({
         },
       },
     },
-  },
-});
+};
 
 
 export default MotorTheme;
