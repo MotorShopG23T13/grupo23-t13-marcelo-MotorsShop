@@ -1,7 +1,7 @@
 import { AppDataSource } from "../../data-source";
 import { User } from "../../entities/users.entities";
 import { AppError } from "../../errors";
-import {randomUUID} from "node:crypto"
+import {randomUUID} from "crypto"
 import { resetPasswordTemplate, sendEmail } from "../../config/nodeMailer.config";
 
 export const resetPassordService = async (email: string, protocol: string, host: string) => {
