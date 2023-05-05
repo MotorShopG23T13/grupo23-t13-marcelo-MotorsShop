@@ -3,7 +3,6 @@ import adsRouters from "./routers/ads.routes"
 import { handleError } from "./errors"
 import userRouter from "./routers/users.routes"
 import loginRouter from "./routers/login.routes"
-import cors from 'cors'
 import addressRouter from "./routers/address.routes"
 import { commentsRoutes } from "./routers/comments.routes"
 
