@@ -10,7 +10,6 @@ import { commentsRoutes } from "./routers/comments.routes"
 
 const app: Application = express()
 
-app.use(cors())
 app.use(express.json())
 app.use("/login/", loginRouter)
 app.use("/users/", userRouter)
