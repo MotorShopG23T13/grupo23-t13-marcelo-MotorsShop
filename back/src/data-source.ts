@@ -2,6 +2,12 @@ import "dotenv/config"
 import path from "path"
 import "reflect-metadata"
 import { DataSource, DataSourceOptions } from "typeorm"
+import { Default1683043011278 as migration } from "./migrations/1683043011278-default"
+import { User } from "./entities/users.entities"
+import { Ads } from "./entities/ads.entities"
+import { Comments } from "./entities/comments.entities"
+import { Gallery } from "./entities/gallery.entities"
+import { Address } from "./entities/address.entities"
 
 const dataSourceConfig = (): DataSourceOptions => {
 
@@ -31,8 +37,8 @@ const dataSourceConfig = (): DataSourceOptions => {
         url: process.env.DATABASE_URL!,
         synchronize: true,
         logging: true,
-        migrations: [migrationsPath],
-        entities: [entitiesPath]
+        migrations: [migration],
+        entities: [User, Address, Ads, Comments, Gallery]
     }
 }
 
