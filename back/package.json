@@ -11,7 +11,7 @@
     "migration:revert": "typeorm-ts-node-commonjs migration:revert -d ./src/data-source.ts",
     "migration:run": "typeorm-ts-node-commonjs migration:run -d ./src/data-source.ts ",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "@types/cors": "^2.8.13",
